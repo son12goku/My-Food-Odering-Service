@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Food Delivery Service</title>
+
+    <!-- for standard css file-->
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- css file for medium size devices -->
+
+    <link rel="stylesheet" media="screen and (max-width:1100px ) and (min-width:720px )  and (min-height:550px) " href="/css/medium.css">
+
+    <!-- css file for small size devices -->
+
+    <link rel="stylesheet" media="screen and (max-width:720px ) " href="/css/small.css">
+
+    <!-- to attach index.js file -->
+
+</head>
+
+<body>
+
+    <!-- floating button -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <!-- this is navbar -->
+
+    <nav id="navbar">
+
+        <div id="logo">
+
+            <!-- logo inside nav bar -->
+            <img src="logo.jpg" alt="logo">
+
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#service">Our Services</a></li>
+
+            <li><a href="#clients-sec">Our Clients</a></li>
+
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- this is home section -->
+    <section id="home">
+
+        <h1 class="h-pri">
+            Welcome to My Food Delivery Service
+        </h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Doloremque quidem, atque culpa labore dolores quod? Sint odit quod culpa dolore reiciendis. </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores enim alias vero assumenda.Explicabo sed ipsam distinctio natus?</p>
+
+        <button class="btn" onclick="showOrderMessage()">Order Now</button>
+    </section>
+
+    <!-- this is services section -->
+
+    <section class="services-sec" id="service">
+
+        <h1 class="h-pri center">
+            Our Services
+        </h1>
+
+        <div id="services">
+
+            <div class="box">
+
+                <img src="img/1.jpg" alt="1st Food">
+
+                <h2 class="h-sec center">
+                    Food Ordering
+                </h2>
+
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam ducimus neque harum sequi amet, beatae velit nesciunt aperiam? Quaerat possimus itaque molestias iure aspernatur fugiat, velit quis expedita rerum.</p>
+
+            </div>
+            <div class="box">
+
+                <img id="sec-img" src="img/2.jpg" alt="1st Food">
+
+                <h2 class="h-sec center">
+                    Food Catering
+                </h2>
+
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam ducimus neque harum sequi amet, beatae velit nesciunt aperiam? Quaerat possimus itaque molestias iure aspernatur fugiat, velit quis expedita rerum.</p>
+
+            </div>
+            <div class="box">
+
+                <img src="img/3.png" alt="1st Food">
+
+                <h2 class="h-sec center">
+                    Bulk Ordering
+                </h2>
+
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam ducimus neque harum sequi amet, beatae velit nesciunt aperiam? Quaerat possimus itaque molestias iure aspernatur fugiat, velit quis expedita rerum.</p>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- this is client section -->
+
+    <section id="clients-sec">
+
+        <h1 class="h-pri center">
+            Our Clients
+        </h1>
+
+        <div id="clients">
+
+            <div class="client-items">
+
+                <img src="img/logo1.jpg" alt="Apple's Logo" class="client-img">
+            </div>
+
+            <div class="client-items">
+
+                <img src="img/logo2.jpg" alt="Microsoft's Logo" class="client-img">
+            </div>
+
+            <div class="client-items">
+
+                <img src="img/logo3.jpg" alt="HP's Logo" class="client-img">
+            </div>
+
+            <div class="client-items">
+
+                <img src="img/logo4.png" alt="Skype's Logo" class="client-img">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h1 class="h-pri center">
+            Contact Us
+        </h1>
+
+        <div id="contact-box">
+
+            <form action="/">
+
+                <div class="form-group">
+
+                    <label for="name">Name: </label>
+
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+
+                </div>
+
+                <div cl ass="form-group">
+
+                    <label for="email">Email: </label>
+
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="ph-number">Phone Number: </label>
+
+                    <input type="number" name="ph-number" id="ph-number" placeholder="Enter Your Phone Number">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">Message: </label>
+
+                    <textarea name="message" id="message" rows="5" cols="20"></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <button class="btn center" id='btn' onclick="showMessage()">Submit Now</button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="center">
+            Copyright &copy; www.myFoodDeliveryService.com. All rights reserved.
+        </div>
+
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

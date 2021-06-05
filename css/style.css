@@ -1,0 +1,259 @@
+    /* import some fonts */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+    /* To reset default css */
+    
+    * {
+        color: black;
+        margin: 0;
+        padding: 0;
+        font-family: 'Architects Daughter', cursive;
+    }
+    /* Naviigation Bar */
+    
+    #navbar {
+        position: absolute;
+        display: flex;
+        top: 0px;
+        align-items: center;
+    }
+    
+    #navbar::before {
+        content: "";
+        background: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.1;
+    }
+    /* Naviigation Bar: Logo and image */
+    
+    #logo {
+        padding-right: 50px;
+        margin: 2px 34px;
+    }
+    
+    #logo img {
+        margin: 3px 6px;
+        width: 87px;
+        height: 54px;
+    }
+    /* Naviigation Bar: list */
+    
+    #navbar ul {
+        display: flex;
+        font-size: 1.2rem;
+    }
+    
+    #navbar ul li {
+        list-style: none;
+    }
+    
+    #navbar ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+    }
+    
+    #navbar ul li a:hover {
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+    }
+    /* Home section */
+    
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 460px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home::before {
+        content: "";
+        position: absolute;
+        background: url('../bg1.jpg') no-repeat;
+        background-size: 100% 100%;
+        height: 55%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+    }
+    
+    #home h1 {
+        text-align: center;
+        color: white;
+    }
+    
+    #home p {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: white;
+    }
+    /* Services section */
+    
+    .services-sec {
+        padding-bottom: 20px;
+        background-color: #e5e5e5;
+        padding-top: 20px;
+    }
+    
+    #services {
+        margin: 34px;
+        margin-top: 0px;
+        display: flex;
+    }
+    
+    #services .box {
+        border: 2px solid rgb(68, 66, 66);
+        padding: 34px;
+        margin: 3px 16px;
+        border-radius: 24px;
+        background: #f2f2f2;
+    }
+    
+    #services .box img {
+        margin: auto;
+        display: block;
+        height: 160px;
+        width: 210px;
+    }
+    /* Clitent section */
+    
+    #clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #clients-sec::before {
+        content: "";
+        position: absolute;
+        background: url('../bg.jpg') no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 290px;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    
+    .client-items {
+        padding: 34px;
+    }
+    
+    .client-img {
+        height: 130px;
+    }
+    /* Contact section */
+    
+    #contact {
+        position: relative;
+    }
+    
+    #contact::before {
+        content: "";
+        position: absolute;
+        background: url('../contact.jpg') no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    
+    #contact-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    
+    #contact-box input,
+    #contact-box textarea {
+        width: 100%;
+        padding: 0.65rem;
+        margin: 10px 0px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+    }
+    
+    #contact-box form {
+        width: 30%;
+    }
+    
+    #contact-box label {
+        font-size: 1.3rem;
+    }
+    /* footer */
+    
+    footer {
+        background: black;
+        padding: 9px 20px;
+    }
+    
+    footer div {
+        color: white;
+    }
+    /* utilitie classes */
+    
+    .h-pri {
+        color: black;
+        font-size: 2.8rem;
+        padding: 12px;
+    }
+    
+    .h-sec {
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+    
+    .btn {
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: gray;
+        margin: 17px auto;
+        cursor: pointer;
+        color: white;
+        font-size: 1.4rem;
+        border-radius: 10px;
+    }
+    
+    .form-group button {
+        display: block;
+        margin: 2px auto;
+    }
+    
+    .center {
+        text-align: center;
+    }
+    /* floating button */
+    
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(80, 79, 79);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    #myBtn:hover {
+        background-color: white;
+        color: black;
+    }

@@ -1,0 +1,72 @@
+/* Naviigation Bar */
+
+#navbar::before {
+    opacity: 0.1;
+}
+
+
+/* Home section */
+
+#home {
+    padding: 3px 80px;
+}
+
+#home::before {
+    height: 85%;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+
+/* Services section */
+
+#services {
+    flex-direction: column;
+}
+
+#services .box {
+    margin: 16px 10px;
+}
+
+
+/* Clitent section */
+
+.client-items {
+    padding-bottom: 113px;
+}
+
+.client-img {
+    height: 70px;
+}
+
+
+/* Contact section */
+
+#contact-box input,
+#contact-box textarea {
+    font-size: 1rem;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+}
+
+
+/* utilitie classes */
+
+.h-pri {
+    font-size: 2rem;
+    padding: 8px;
+}
+
+.h-sec {
+    font-size: 1.5rem;
+    padding: 8px;
+}
+
+.btn {
+    padding: 3px 20px;
+    font-size: 1.2rem;
+}
